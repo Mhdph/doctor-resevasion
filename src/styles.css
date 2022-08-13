@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://v1.fontapi.ir/css/Shabnam:100;300;400;500;700");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Shabnam", sans-serif;
+  background-color: #f2f7ff;
+}
+li {
+  list-style: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

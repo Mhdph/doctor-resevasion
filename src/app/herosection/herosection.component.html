@@ -1,0 +1,154 @@
+<nav
+  class="relative font-shabnam flex flex-wrap items-center justify-between px-2 py-3 mb-3"
+>
+  <div
+    class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+  >
+    <div
+      class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start"
+    >
+      <div class="flex justify-between gap-2.5 items-center">
+        <div
+          class="rounded-lg bg-[#4d77ff] py-3 px-5 justify-center text-white text-sm"
+        >
+          ثبت نام
+        </div>
+        <div class="make-schedule-now">ورود</div>
+      </div>
+      <button
+        class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+        type="button"
+        (click)="toggleNavbar()"
+      >
+        <fa-icon class="text-black" [icon]="faBars"></fa-icon>
+      </button>
+    </div>
+    <div
+      [ngClass]="{ hidden: !showMenu, flex: showMenu }"
+      class="lg:flex lg:flex-grow items-center"
+    >
+      <ul class="flex flex-col lg:flex-row list-none ml-auto">
+        <li class="nav-item">
+          <a
+            class="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-black hover:opacity-75"
+            href="#pablo"
+          >
+            <i class="text-lg leading-lg text-black"></i
+            ><span class="ml-2">رزرو شده</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-black hover"
+            href="#pablo"
+          >
+            <i class="text-lg leading-lg text-black"></i
+            ><span class="ml-2">ارتباط با ما</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-black hover"
+            href="#pablo"
+          >
+            <i class="text-lg leading-lg text-black"></i
+            ><span class="ml-2">نوبت‌گیری</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-black hover"
+            href="#pablo"
+          >
+            <i class="text-lg leading-lg text-black"></i
+            ><span class="ml-2">خانه</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div
+  class="flex flex-col md:flex-row font-shabnam mt-5 mx-10 justify-between items-center"
+>
+  <div class="direction text-center md:text-right flex-[2]">
+    <b class=""
+      ><p class="text-[54px]">
+        <span>همین حالا تحت مراقبت قرار بگیرید</span>
+      </p>
+      <p class="text-[54px]">
+        <span>نوبت دهی آسان </span><span class="text-[#4D77FF]">برای همه</span>
+      </p></b
+    >
+    <div class="text-sm text-[#696969]">
+      <p class="">
+        مراقبت بهداشتی روشی جدید برای دریافت مظنه بیمه سلامت است. ما ابزارهای
+        مشابهی را ارائه می دهیم
+      </p>
+      <p class="">
+        ارائه شده توسط شرکت های بیمه به صورت رایگان و قیمت ها بر اساس کمک های
+        مالی است و نه
+      </p>
+      <p class="">شبکه های طرح سلامت محدود.</p>
+    </div>
+    <p class="text-[#696969] text-sm">همین حالا نوبتت را رزرو کن</p>
+    <button class="bg-[#4D77FF] mt-4 text-white py-2 px-4 rounded-xl">
+      ثبت نوبت
+    </button>
+  </div>
+  <div class="flex-1 md:ml-36">
+    <img
+      class="xl:w-[487px] xl:h-[613px] lg:w-[350px] lg:h-[510px] w-[400px] h-[400px]"
+      src="../../assets/public/group-9415@2x.png"
+    />
+  </div>
+</div>
+<!-- section -->
+<div class="title-div1">
+  <b class="our-rating-b">راه حلی آسان</b
+  ><b class="make-a-schedule-in-advance-wit">مرحله به مرحله درمان شما</b>
+</div>
+<div class="soultaion-section">
+  <div class="soulation-card">
+    <div>
+      <img class="soultaion-icon" alt="" src="public/iconlybulksearch.svg" />
+    </div>
+    <b class="soultaion-title"> شکایات بهداشتی را بررسی کنید</b>
+    <p class="soultaion-text">
+      بیماری را بررسی کنید تا بتوانید<br />به راحتی متخصص مناسب را انتخاب کنید
+    </p>
+  </div>
+  <div class="soulation-card">
+    <div>
+      <img class="soultaion-icon" alt="" src="public/iconlybulkprofile.svg" />
+    </div>
+    <b class="soultaion-title"> متخصص خود زا انتخاب کنید</b>
+    <p class="soultaion-text">
+      باتوجه به یماری خود <br />
+      متخصص مورد را نیاز انتخاب کنید .
+    </p>
+  </div>
+  <div class="soulation-card">
+    <div>
+      <img class="soultaion-icon" alt="" src="public/iconlybulkcalendar.svg" />
+    </div>
+    <b class="soultaion-title">یک وقت رزرو کنید</b>
+    <p class="soultaion-text">
+      یک قرار با دکتر بزارید<br />
+      بنابراین شما میتوانید شروع کنید <br />
+      به بیان حل مشکل .
+    </p>
+  </div>
+
+  <div class="soulation-card">
+    <div>
+      <img class="soultaion-icon" alt="" src="public/iconlybulkstar.svg" />
+    </div>
+    <b class="soultaion-title">راه حل خود را پیدا کنید</b>
+    <p class="soultaion-text">
+      پس از انجام معاینه <br />با یک متخصص می توانیم روش درمانی <br />صحیح شما
+      را پیدا کنیم.
+    </p>
+  </div>
+</div>
