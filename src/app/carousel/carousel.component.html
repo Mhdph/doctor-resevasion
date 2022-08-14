@@ -1,29 +1,42 @@
-<div class="flex justify-center items-center">
+<div class="flex justify-center items-center w-full">
   <c-carousel>
     <c-carousel-indicators></c-carousel-indicators>
     <c-carousel-inner>
       <c-carousel-item *ngFor="let slide of slides">
-        <img
-          alt="{{ slide.title }}"
-          class="d-block w-100"
-          loading="lazy"
-          src="{{ slide.src }}"
-        />
-        <c-carousel-caption class="d-none d-md-block">
-          <h3>{{ slide.title }}</h3>
-          <p>{{ slide.subtitle }}</p>
-        </c-carousel-caption>
+        <div class="flex items-center justify-center px-5 py-5">
+          <div
+            class="mx-auto w-2/3 rounded-lg shadow-lg px-5 pt-5 pb-10 text-gray-800"
+          >
+            <div class="w-full pt-1 text-center pb-5 -mt-16 mx-auto">
+              <a href="#" class="block relative">
+                <img
+                  alt="{{ slide.title }}"
+                  src="{{ slide.src }}"
+                  class="mx-auto object-cover rounded-full h-20 w-20"
+                />
+              </a>
+            </div>
+            <div class="w-full mb-10">
+              <div class="text-3xl text-indigo-500 text-left leading-tight h-3">
+                “
+              </div>
+              <p class="text-sm text-gray-600 text-center px-5">
+                {{ slide.subtitle }}
+              </p>
+              <div
+                class="text-3xl text-indigo-500 text-right leading-tight h-3 -mt-3"
+              >
+                ”
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-md text-indigo-500 font-bold text-center">
+                {{ slide.title }}
+              </p>
+            </div>
+          </div>
+        </div>
       </c-carousel-item>
     </c-carousel-inner>
-    <c-carousel-control
-      [routerLink]
-      caption="Previous"
-      direction="prev"
-    ></c-carousel-control>
-    <c-carousel-control
-      [routerLink]
-      caption="Next"
-      direction="next"
-    ></c-carousel-control>
   </c-carousel>
 </div>
