@@ -14,3 +14,18 @@ li {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .soulation-card {
+    @apply border-t-[3px] border-solid border-[#4f77ff] flex flex-col bg-white p-5 shadow-lg w-60 h-56 mb-4;
+  }
+  .soultaion-icon {
+    @apply w-11 h-11;
+  }
+  .soultaion-title {
+    @apply mt-5;
+  }
+  .soultaion-text {
+    @apply text-[#696969];
+  }
+}
